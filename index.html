@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
     <title>Foundation Framework Crash Course</title>
+    <style>
+      .spacer {
+        height: 500px;
+      }
+    </style>
   </head>
   <body>
     <!-- typography -->
@@ -135,6 +140,89 @@
       <button class="secondary button hollow">Button</button>
       <button class="disabled button hollow">Button</button>
     </div>
+
+    <div class="row">
+      <!-- forms -->
+      <form>
+        <div>
+          <label>Name</label>
+          <input type="text" placeholder="Name" />
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="email" placeholder="Email" />
+        </div>
+        <div>
+          <label>Number</label>
+          <input type="Number" />
+        </div>
+        <div>
+          <label>Message</label>
+          <textarea placeholder="Message"></textarea>
+        </div>
+        <div>
+          <label>Gender</label>
+          <select>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <label>Gender</label>
+          <select multiple>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <fieldset class="fieldset">
+          <legend>A Fieldset</legend>
+          <input type="checkbox" /><label>Checkbox</label>
+          <input type="checkbox" /><label>Checkbox</label>
+          <input type="checkbox" /><label>Checkbox</label>
+        </fieldset>
+        <label for="fileUpload" class="button">Upload File</label>
+        <input type="file" id="fileUpload" class="show-for-sr" />
+
+        <label>Password</label>
+        <input type="password" />
+        <p class="help-text">Your password must be 8 chars or more</p>
+
+        <div class="input-group">
+          <span class="input-group-label">@</span>
+          <input type="email" class="input-group-field" />
+          <div class="input-group-button">
+            <input type="submit" class="button" value="Submit" />
+          </div>
+        </div>
+
+        <div class="switch">
+          <input
+            class="switch-input"
+            id="mySwitch"
+            type="checkbox"
+            name="exampleSwitch"
+          />
+          <label class="switch-paddle" for="mySwitch">
+            <span class="show-for-sr">Enabled</span>
+          </label>
+        </div>
+
+        <div class="slider" data-slider data-initial-start="0" data-end="20">
+          <span
+            class="slider-handle"
+            data-slider-handle
+            role="slider"
+            tabindex="1"
+          ></span>
+          <span class="slider-fill" data-slider-fill></span>
+          <input type="hidden" />
+        </div>
+      </form>
+    </div>
+
+    <div class="spacer"></div>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
